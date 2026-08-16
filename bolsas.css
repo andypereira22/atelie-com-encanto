@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf7;
+    color: #604846;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.topo {
+    background: #ffffff;
+    padding: 20px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 20px rgba(80, 50, 40, 0.10);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #9b6269;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #604846;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.ativo {
+    color: #b56f72;
+}
+
+
+/* =========================
+   CAPA
+========================= */
+
+.hero {
+    min-height: 570px;
+
+    padding: 70px 9%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            #f0ddc5,
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            #f2dce1,
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #fffaf7,
+            #f8eee7
+        );
+}
+
+.hero-texto {
+    max-width: 650px;
+}
+
+.pequeno {
+    color: #ad6d70;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 8vw, 90px);
+    line-height: 0.98;
+
+    color: #604846;
+
+    margin: 20px 0;
+}
+
+.hero-texto > p:not(.pequeno) {
+    color: #786763;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 570px;
+}
+
+
+/* =========================
+   BOLSA GRANDE
+========================= */
+
+.bolsa {
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #ead2b7,
+        #f6e7d5
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 150px;
+
+    box-shadow:
+        0 25px 60px rgba(90, 60, 45, 0.18);
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    padding: 15px 30px;
+
+    background: #a96b69;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #895654;
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo {
+    text-align: center;
+
+    padding: 90px 20px 50px;
+}
+
+.titulo h2 {
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #604846;
+
+    margin: 12px 0;
+}
+
+.titulo > p:last-child {
+    color: #806e69;
+}
+
+
+/* =========================
+   TUTORIAIS
+========================= */
+
+.tutorial {
+    width: 88%;
+    max-width: 1150px;
+
+    margin: 0 auto 55px;
+
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 380px 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    background: white;
+
+    border-radius: 30px;
+
+    border: 1px solid #eee1dc;
+
+    box-shadow:
+        0 15px 45px rgba(80, 60, 50, 0.08);
+
+    transition: 0.3s;
+}
+
+.tutorial:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 25px 55px rgba(80, 60, 50, 0.13);
+}
+
+
+/* =========================
+   IMAGENS
+========================= */
+
+.imagem {
+    min-height: 380px;
+
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 140px;
+}
+
+.bolsa1 {
+    background: linear-gradient(
+        145deg,
+        #ead4b9,
+        #f5e6d4
+    );
+}
+
+.bolsa2 {
+    background: linear-gradient(
+        145deg,
+        #f1d3d9,
+        #fae9eb
+    );
+}
+
+.bolsa3 {
+    background: linear-gradient(
+        145deg,
+        #eee0c8,
+        #faf1e0
+    );
+}
+
+.bolsa4 {
+    background: linear-gradient(
+        145deg,
+        #ddd2e8,
+        #f2eaf6
+    );
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo > span {
+    color: #ad6d70;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.conteudo h2 {
+    color: #604846;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    margin: 10px 0 15px;
+}
+
+.conteudo > p {
+    color: #786763;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.conteudo h3 {
+    color: #a56866;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    margin: 20px 0 10px;
+}
+
+.conteudo ul,
+.conteudo ol {
+    padding-left: 25px;
+
+    color: #74625e;
+}
+
+.conteudo li {
+    margin: 7px 0;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    margin-top: 90px;
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #f4e1df,
+        #f5e8d9
+    );
+}
+
+.final h2 {
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    color: #604846;
+}
+
+.final p {
+    color: #786763;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #493a39;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+footer p {
+    color: #d8c8c3;
+    margin: 12px 0 20px;
+}
+
+footer small {
+    color: #bbaaa5;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-texto {
+        margin: auto;
+    }
+
+    .hero-texto > p:not(.pequeno) {
+        margin: auto;
+    }
+
+    .tutorial {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+    }
+
+    .imagem {
+        min-height: 280px;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .topo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .bolsa {
+        width: 220px;
+        height: 220px;
+        font-size: 100px;
+    }
+
+    .titulo h2 {
+        font-size: 36px;
+    }
+
+    .tutorial {
+        width: 92%;
+        padding: 22px;
+        gap: 25px;
+    }
+
+    .imagem {
+        min-height: 220px;
+        font-size: 95px;
+    }
+
+    .conteudo h2 {
+        font-size: 32px;
+    }
+
+    .final h2 {
+        font-size: 34px;
+    }
+}
